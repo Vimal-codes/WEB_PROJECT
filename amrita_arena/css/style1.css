@@ -1,0 +1,84 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,700,500italic,900,700italic,900italic);
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,600,700);
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+    -webkit-transition: all 2s;
+    transition: all 2s;
+}
+*:focus {
+    outline: 0;
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  color: #C6C6C6;
+  font-size: 14px;
+  font-family: 'Roboto';
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+   
+
+.menu {
+  margin:0px;
+  padding:5px 0px;
+  width:100%;
+  background-color:#ffffff;
+}
+.container {
+  width:100%;
+  max-width:1250px;
+  margin:0 auto;
+}
+
+
+header {
+  background-color: rgb(177, 15, 86);
+  padding: 10px;
+  font-size: 17px;
+}
+
+nav {
+  width: 100%;
+  padding: 10px 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.logo {
+  width: 200px;
+}
+
+nav ul {
+  width: 100%;
+  text-align: right;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+footer {
+  background-color: rgb(177, 15, 86);
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+}
+

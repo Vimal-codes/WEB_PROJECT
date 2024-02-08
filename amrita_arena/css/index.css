@@ -1,0 +1,286 @@
+/* Resetting margins, padding, and setting font for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Styling for the header section */
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0), rgba(4, 9, 30, 0)), url(./amritapic.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/* Styling for the navigation bar */
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Styling for the navigation bar's image */
+nav img {
+    width: 150px;
+}
+
+/* Styling for the navigation links */
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%; /* hide the line */
+    height: 2px;
+    background: rgb(177, 15, 86);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+/* Styling for the text box within the header */
+.text-box {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* use for center of the div */
+    text-align: center;
+}
+
+.text-box h1 {
+    font-size: 62px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.589);
+}
+
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 18px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+
+/* Styling for hero button */
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    border: 1px solid rgb(177, 15, 86);
+    background: rgb(177, 15, 86);
+    transition: 1s;
+}
+
+/* Additional styling for headings and sections */
+.hero-section h1{
+    font-size: 32px;
+    font-weight: 600;
+    color: rgb(177, 15, 86);
+}
+
+.hero-section p{
+    color: #000000;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.hero-section {
+    text-align: center;
+    padding: 50px;
+    background-color: rgb(255, 255, 255);
+    font-size: medium;
+}
+
+.sport-section h1{
+    font-size: 32px;
+    font-weight: 600;
+    color: rgb(177, 15, 86);
+}
+
+
+
+.sport-section {
+    text-align: center;
+    padding: 0px;
+    background-color: rgb(255, 255, 255);
+    font-size: medium;
+}
+/* Styling for sports cards and lists */
+.sports-list {
+    margin-top: 2%;
+    display: flex;
+    justify-content: center; /* Align cards to the center horizontally */
+    max-width: 1000px;
+    padding: 0 10px;
+    flex-wrap: wrap;
+}
+
+.sports-card {
+    box-sizing: border-box;
+    width: calc(33.33% - 20px);
+    margin: 0 10px 20px; /* Adjust margin for spacing between cards */
+    background: #fff3f3;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.sports-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.sports-card h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.sports-card p {
+    color: #000000;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+
+/* Styling for news section */
+.news {
+    text-align: center;
+    margin-top: 2%;
+}
+
+.news h1{
+    font-size: 32px;
+    font-weight: 600;
+    color: rgb(177, 15, 86);
+}
+
+/* Styling for the footer */
+footer {
+    background-color: rgb(177, 15, 86);
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* Styling for articles section */
+.article {
+    font-size: medium;
+    display: flex;
+    justify-content: space-between;
+    padding: 10;
+    width: 70%;
+    margin: 2rem auto 0 auto;
+}
+
+.article img {
+    height: 250px;
+}
+
+.article p {
+    color: #000000;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.article h2{
+    font-size: 25px;
+    font-weight: 600;
+    color: rgb(177, 15, 86);
+}
+
+.toast-container {
+    position: fixed;
+    bottom: -140px;
+    width: 90%;
+    max-width: 720px;
+    display: flex;
+    align-items: center;
+    background: #000;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    padding: 0 16px;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px -4px rgba(0, 0, 0, 0.2);
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 1800ms ease;
+  }
+  
+  .toast-container.active {
+    bottom: 20px;
+  }
+  
+  .toast-container h3 {
+    font-weight: 800;
+    line-height: 1.5;
+    font-size: 16px;
+  }
+  
+  .toast-container .text-content {
+    padding: 0 24px;
+    padding-right: 40px;
+  }
+
+  
+  .toast-container a {
+    color: #5f64f3;
+  }
+  
+  .toast-container .close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    cursor: pointer;
+  }
+
+  .toast-container img {
+    width: 50px; /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
+}
+
+.close img {
+    width: 20px; /* Adjust the width as needed */
+    height: 20px; /* Adjust the height as needed */
+}
